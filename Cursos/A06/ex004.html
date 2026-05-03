@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Strings</title>
+    <style>
+        body {
+            font:20px arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.</br>`) // A propriedade length retorna o número de caracteres em uma string, incluindo espaços.
+        document.write(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong>. </br>`) // O metodo toUpperCase() converte todos os carateres em maiúsculas.
+        document.write(`Seu nome em miniúsculo é <strong>${nome.toLowerCase()}</strong>.`) // O metodo toLowerCase() converte tds os carateres em minúsculos.
+    </script>
+</body>
+</html>

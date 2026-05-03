@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Programa</title>
+    <style> 
+        body {
+            background-color: rgb(59, 59, 234);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            color: azure;
+        }
+
+        h1 {
+            color: #e8e806;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <h2>Meu Primeiro Programa de javaScript.</h2>
+
+    <script>
+    var n1 = Number(window.prompt('Digite um número:')) // O prompt sempre retorna uma string, mesmo que o usuário digite um número. Por isso, é necessário converter a string para um número usando a função Number() ou parseFloat().
+    var n2 = Number(window.prompt('Digite outro número:'))
+    var s = n1 + n2
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // O operador + é usado para concatenar strings. Para evitar isso, é necessário converter o número para uma string usando a função String() ou toString().
+</script>
+</body>
+</html>
