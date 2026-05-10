@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 149);
+            color: white;
+            font: normal 18px arial;
+        }
+    </style>
 </head>
 <body>
-  <h1>Iniciando estudos em Dom</h1>  
+  <h1>Iniciando estudos em Dom</h1> 
+  <p>Aqui vai o resultado</p> 
+<p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
+<div id="msg">Clique em mim</div>
+
+<script>
+    // window.document.write(window.document.URL)
+    var corpo = window.document.body
+    var p1 = document.getElementsByTagName('p')[1] // O método getElementsByTagName() retorna uma coleção de elementos com a tag especificada. O índice [0] é usado para acessar o primeiro parágrafo, pois a contagem começa em 0.
+
+    // window.document.write('O texto do primeiro parágrafo é: ' + p1.innerText) // A proriedade innerText retorna o texto contido em um elemento, sem as tags HTML. Neste caso, ela retorna o texto do primeiro parágrafo.
+    // /*
+    // var d = window.document.getElementById('msg')
+    // d.style.backgroundColor = 'pink'
+    // d.style.color = 'blue'
+    // d.innerText = 'Clicou!'   
+    var d = window.document.querySelector('div#msg')
+    d.style.color = 'yellow'
+    d.style.backgroundColor = 'green'
+
+</script>
 </body>
 </html>
